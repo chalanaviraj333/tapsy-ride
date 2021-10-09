@@ -1,0 +1,71 @@
+.headerClass {
+    font-family: poppins,sans-serif !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    font-size: 75px !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .headerClass {
+        font-size: 40px !important;
+    }
+
+    .bannerimage-class {
+        width: 350px !important;
+        margin-top: 100px !important;
+    }
+
+    .font-class-bas {
+        font-size: 15px !important;
+    }
+}
+
+.headersection-class {
+    margin-top: 100px !important;
+}
+
+.button-Class-left {
+    background-color: #8B37FF;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 25px 12px 25px;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(121, 82, 179, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(121, 82, 179, 0.3);
+    
+}
+
+.button-Class-right {
+    background-color: #ffffff;
+    color: #8B37FF;
+    border: solid 1px #8B37FF;
+    border-radius: 25px;
+    padding: 12px 30px 12px 30px;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(121, 82, 179, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(121, 82, 179, 0.3);
+    margin-left: 30px;
+}
+
+.button-Class:hover, .button-Class:focus, .button-Class:active, .button-Class.active, .button-Class.focus {
+  background-color: #561ea5 !important;
+  border-color: #561ea5 !important;
+  color: #ffffff !important;
+}
+
+.bannerimage-class {
+    width: 800px;
+    margin-top: 150px;
+}
+
+.font-class-bas {
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bas-font-class {
+    font-family: poppins,sans-serif !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    font-size: 50px !important;
+    color: #ffe601;
+}

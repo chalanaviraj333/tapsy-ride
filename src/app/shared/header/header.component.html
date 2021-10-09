@@ -1,0 +1,72 @@
+<!-- Navbar STart -->
+<header id="topnav" class="defaultscroll sticky" (window:scroll)="windowScroll()" [class]="navClass"
+  [ngClass]="{'tagline-height': sliderTopbar == true}">
+  <div class="container">
+    <!-- Logo container-->
+    <div>
+      <a class="logo" routerLink="/index" *ngIf="navClass !== 'nav-light'">
+        <img src="assets/images/logo/logonewpurplecolor.svg" class="l-dark logo-light-mode" height="42" alt="">
+        <img src="assets/images/logo/logonewpurplecolor.svg" class="logo-dark-mode" height="42" alt="">
+      </a>
+
+      <a class="logo" routerLink="/index" *ngIf="navClass === 'nav-light'">
+        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+      </a>
+    </div>
+
+    <span *ngIf="!buttonList && !isdeveloper && !shopPages">
+      <div class="buy-button">
+        <ng-template [ngIf]="navClass === 'nav-light'">
+          <a href="javascript: void(0);" class="btn btn-primary login-btn-primary">Join Now</a>
+          <a href="javascript: void(0);" class="btn btn-light login-btn-light">Join Now</a>
+        </ng-template>
+        <ng-template [ngIf]="navClass !== 'nav-light'">
+          <a href="javascript: void(0);" class="btn btn-primary">Join Now</a>
+        </ng-template>
+      </div>
+    </span>
+    <!--end login button-->
+
+    <div class="menu-extras">
+      <div class="menu-item">
+        <!-- Mobile menu toggle-->
+        <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+          <div class="lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <!-- End mobile menu toggle-->
+      </div>
+    </div>
+
+    <div id="navigation">
+      <!-- Navigation Menu-->
+      <ul class="navigation-menu" [class]="navClass">
+        <li><a routerLink="/" class="nav-link-ref">Drive</a></li>
+        <li><a routerLink="/" class="nav-link-ref">Ride</a></li>
+        <li><a routerLink="/" class="nav-link-ref">Deliver</a></li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" (click)="onMenuClick($event)">Business</a><span class="menu-arrow"></span>
+          <ul class="submenu">
+            <li><a class="nav-link-ref" routerLink="/documentation">Join Now</a></li>
+            <li><a class="nav-link-ref" routerLink="/changelog">How it works</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--end navigation menu-->
+      <div class="buy-menu-btn d-none">
+        <a href="javascript: void(0);" target="_blank" class="btn btn-primary">Join Now</a>
+      </div>
+      <!--end login button-->
+      <!--end login button-->
+    </div>
+    <!--end navigation-->
+  </div>
+  <!--end container-->
+</header>
+<!--end header-->
+<!-- Navbar End -->
